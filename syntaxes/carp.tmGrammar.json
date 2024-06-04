@@ -1,0 +1,131 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Carp",
+  "patterns": [
+    {
+      "include": "#comments-block"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#reserved"
+    },
+    {
+      "include": "#base-type"
+    },
+    {
+      "include": "#detected-type"
+    },
+    {
+      "include": "#object"
+    },
+    {
+      "include": "#method"
+    },
+    {
+      "include": "#identifier"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numeric"
+    }
+  ],
+  "repository": {
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.language.carp",
+          "match": "\\b(true|false|null|this)\\b"
+        }
+      ]
+    },
+    "reserved": {
+      "patterns": [
+        {
+          "name": "keyword.control.carp",
+          "match": "\\b(try|catch|finally|if|else|while|for|return|break|continue|yield|class|struct|let|import)\\b"
+        }
+      ]
+    },
+    "base-type": {
+      "patterns": [
+        {
+          "name": "storage.type.carp",
+          "match": "\\b(int|str|chr|bool|obj|null|void|func|auto)\\b"
+        }
+      ]
+    },
+    "detected-type": {
+      "patterns": [
+        {
+          "name": "storage.type.carp",
+          "match": "([a-zA-Z][a-zA-Z0-9_]*)\\** (?=[a-zA-Z][a-zA-Z0-9_]*)"
+        }
+      ]
+    },
+    "object": {
+      "patterns": [
+        {
+          "name": "variable.other.object.carp",
+          "match": "([a-zA-Z][a-zA-Z0-9_]*)(?=\\.)"
+        }
+      ]
+    },
+    "method": {
+      "patterns": [
+        {
+          "name": "entity.name.function.carp",
+          "match": "([a-zA-Z][a-zA-Z0-9_]*)\\("
+        }
+      ]
+    },
+    "identifier": {
+      "patterns": [
+        {
+          "name": "entity.name.variable.carp",
+          "match": "[a-zA-Z][a-zA-Z0-9_]*"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.single.carp",
+      "begin": "'",
+      "end": "'",
+      "patterns": [
+        {
+          "name": "constant.character.escape.carp",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "numeric": {
+      "patterns": [
+        {
+          "name": "constant.numeric.carp",
+          "match": "\\-?([0-9]+|[0-9]+\\.[0-9]+)"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.carp",
+          "match": "#.*$"
+        }
+      ]
+    },
+    "comments-block": {
+      "name": "comment.block.carp",
+      "begin": "#\\(",
+      "end": "\\)",
+      "patterns": []
+    }
+  },
+  "scopeName": "source.carp"
+}

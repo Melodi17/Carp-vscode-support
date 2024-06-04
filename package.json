@@ -1,0 +1,25 @@
+{
+  "name": "carp",
+  "displayName": "Carp Language",
+  "description": "Carp lang support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "carp",
+      "aliases": ["Carp", "carp"],
+      "extensions": [".carp"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "carp",
+      "scopeName": "source.carp",
+      "path": "./syntaxes/carp.tmGrammar.json"
+    }]
+  }
+}
