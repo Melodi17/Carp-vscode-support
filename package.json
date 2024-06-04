@@ -10,17 +10,32 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "carp",
-      "aliases": ["Carp", "carp"],
-      "extensions": [".carp"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "carp",
-      "scopeName": "source.carp",
-      "path": "./syntaxes/carp.tmGrammar.json"
-    }],
+    "languages": [
+      {
+        "id": "carp",
+        "aliases": [
+          "Carp",
+          "carp"
+        ],
+        "extensions": [
+          ".carp"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "json",
+        "extensions": [
+          ".carpproj"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "carp",
+        "scopeName": "source.carp",
+        "path": "./syntaxes/carp.tmGrammar.json"
+      }
+    ],
     "snippets": [
       {
         "language": "carp",
