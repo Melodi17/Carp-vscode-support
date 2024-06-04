@@ -20,6 +20,12 @@
       "language": "carp",
       "scopeName": "source.carp",
       "path": "./syntaxes/carp.tmGrammar.json"
-    }]
+    }],
+    "snippets": [
+      {
+        "language": "carp",
+        "path": "./snippets/carp.json"
+      }
+    ]
   }
 }

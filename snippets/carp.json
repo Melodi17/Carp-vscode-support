@@ -1,0 +1,135 @@
+{
+    "if statement": {
+        "prefix": "if",
+        "body": [
+            "if $1 {",
+            "    $2",
+            "}"
+        ],
+        "description": "Simple if statement"
+    },
+
+    "if statement (inline)": {
+        "prefix": "ifi",
+        "body": [
+            "if $1 -> $2"
+        ],
+        "description": "Simple if statement (inline)"
+    },
+
+    "import": {
+        "prefix": "import",
+        "body": [
+            "import $1"
+        ],
+        "description": "Import statement"
+    },
+
+    "import io": {
+        "prefix": "import std.io",
+        "body": [
+            "import std.io"
+        ],
+        "description": "Import io"
+    },
+
+    "import math": {
+        "prefix": "import std.math",
+        "body": [
+            "import std.math"
+        ],
+        "description": "Import math"
+    },
+
+    "import fs": {
+        "prefix": "import std.fs",
+        "body": [
+            "import std.fs"
+        ],
+        "description": "Import fs"
+    },
+
+    "import parse": {
+        "prefix": "import std.parse",
+        "body": [
+            "import std.parse"
+        ],
+        "description": "Import parse"
+    },
+
+    "import resource": {
+        "prefix": "import std.resource",
+        "body": [
+            "import std.resource"
+        ],
+        "description": "Import resource"
+    },
+
+    "import net": {
+        "prefix": "import std.net",
+        "body": [
+            "import std.net"
+        ],
+        "description": "Import net"
+    },
+
+    "import system": {
+        "prefix": "import std.system",
+        "body": [
+            "import std.system"
+        ],
+        "description": "Import system"
+    },
+
+    "class": {
+        "prefix": "class",
+        "body": [
+            "class $1 {",
+            "    $2",
+            "}"
+        ],
+        "description": "Class definition"
+    },
+
+    "try catch": {
+        "prefix": "try",
+        "body": [
+            "try {",
+            "    $1",
+            "} catch {",
+            "    $2",
+            "}"
+        ],
+        "description": "Try-catch statement"
+    },
+
+    "while loop": {
+        "prefix": "while",
+        "body": [
+            "while $1 {",
+            "    $2",
+            "}"
+        ],
+        "description": "While loop"
+    },
+
+    "for loop": {
+        "prefix": "for",
+        "body": [
+            "for $1 : $2 {",
+            "    $3",
+            "}"
+        ],
+        "description": "For loop"
+    },
+
+    "for loop (no storage)": {
+        "prefix": "for",
+        "body": [
+            "for $1 {",
+            "    $2",
+            "}"
+        ],
+        "description": "For loop (no storage)"
+    }
+}
