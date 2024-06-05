@@ -3,6 +3,8 @@
   "displayName": "Carp Language",
   "description": "Carp lang support",
   "version": "0.0.1",
+  "repository": "https://github.com/Melodi17/Carp-vscode-support",
+  "publisher": "MelodiDey17",
   "icon": "carplogo.png",
   "engines": {
     "vscode": "^1.89.0"
