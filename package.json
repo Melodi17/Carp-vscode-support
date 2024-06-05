@@ -3,6 +3,7 @@
   "displayName": "Carp Language",
   "description": "Carp lang support",
   "version": "0.0.1",
+  "icon": "carplogo.png",
   "engines": {
     "vscode": "^1.89.0"
   },
@@ -20,7 +21,11 @@
         "extensions": [
           ".carp"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "dark": "carplogo.png",
+          "light": "carplogo.png"
+        }
       },
       {
         "id": "json",
